@@ -1,5 +1,6 @@
 def solve1():
     lines = open('input.py').read().split('\n')
+    max_cubes = {'red': 12, 'green': 13, 'blue': 14}
     invalid_games = set()
     gamesum = 0
     for line in lines:
@@ -16,7 +17,7 @@ def solve1():
                 turn_parts = turn.split(' ')
                 colour = turn_parts[1]
                 count = int(turn_parts[0])
-                if (colour == 'red' and count > 12) or (colour == 'green' and count > 13) or (colour == 'blue' and count > 14):
+                if count > max_cubes[colour]:
                     invalid_games.add(gameID)
                     break
     solution = gamesum - sum(invalid_games)
