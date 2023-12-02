@@ -13,7 +13,7 @@ def solve1():
         total = sum(digits)
         return total
 
-print (f' Solution 1 answer is {solve1()}')
+print (f'Solution 1 answer is {solve1()}')
 def solve2():
     converted_digits = []
     number_words = {
@@ -31,7 +31,7 @@ def solve2():
         convertedtotal = sum(converted_digits)
         return convertedtotal
 
-print(f' Solution 2 answer is {solve2()}')
+print(f'Solution 2 answer is {solve2()}')
 
 
 
