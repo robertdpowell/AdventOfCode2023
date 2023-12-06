@@ -10,6 +10,7 @@ def parse_input(input):
     seed_to_soil_map = {}
     for line in parsed_seeds_to_soil:
         dest_start, src_start, length = map(int, line.split())
+        print (dest_start, src_start, length)
         for i in range(length):
             seed_to_soil_map[src_start + i] = dest_start + i
 
