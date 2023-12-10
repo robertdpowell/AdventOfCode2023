@@ -45,13 +45,14 @@ def solve2():
         matches = winning_set.intersection(your_set)
 
         current_index = lines.index(current_line)
-
         for i in  range(len(matches)):
             next_card_index = current_index + i + 1
             if next_card_index < original_cards:
                 cards_queue.append(lines[next_card_index])
                 processed_cards += 1
                 print (f'Adding card {next_card_index} to queue')
+
     print (f'Processed {processed_cards} cards')
-# print (f'The answer to part 1 is {solve1()}')
+
+print (f'The answer to part 1 is {solve1()}')
 solve2()

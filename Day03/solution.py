@@ -18,12 +18,19 @@ def check_for_special_characters(row, col):
 
 def check_for_numbers_surrounding_star(row, col):
     directions = [(0, 1), (1, 0), (1, 1), (-1, 0), (0, -1), (-1, -1), (1, -1), (-1, 1)]
+    adjacent_digits = set()
     for dr, dc in directions:
         adjacent_row, adjacent_col = row + dr, col + dc # check the adjacent cells
         if 0 <= adjacent_row < map_height and 0 <= adjacent_col < map_width: # if the adjacent cell is within the map
             if map_data[adjacent_row][adjacent_col].isdigit():
-                return True
-    return False
+                adjacent_digits.add((adjacent_row, adjacent_col))
+                print (f'Adjacent digits are {adjacent_digits}')
+    # if len(adjacent_digits) == 2:
+        print(f'Adjacent digits are {adjacent_digits}')
+        return True
+
+
+
 def solve1():
     total_sum = 0
     for row in range(map_height):
@@ -56,12 +63,13 @@ def solve2():
     for row in range(map_height):
         col = 0
         while col < map_width:
-            if map_data[row][col].check_for_numbers_surrounding_star():
-                char = map_data[row][col]
-                print(char)
+            if is_star(map_data[row][col]):  # Check if the current character is a star ('*') using your function
+                if check_for_numbers_surrounding_star(row, col):
+                    total_sum += 1
+            col += 1
+    return total_sum
 
-
-
+# print (f'Solution 2 answer is {total_sum}')
 print (f'Solution 1 answer is {solve1()}')
-solve2()
+print (f'Solution 2 answer is {solve2()}')
 

@@ -41,7 +41,6 @@ def solve2(input):
         distance = duration * pressing_time
         if distance > concatenated_record:
             ways_to_win += 1
-
     return ways_to_win
 
 print (f'solution 1 answer is {solve1(input)}')
