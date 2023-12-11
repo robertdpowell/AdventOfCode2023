@@ -1,14 +1,14 @@
 **Day 1**
 
-Part 1: :star:
+Part 1: 🌟
 
-Part 2: :star:
+Part 2: 🌟
 
 ---
 
 **Day 2**
 
-Part 1: :star::star:
+Part 1: 🌟
 
 Part 2: 
 
@@ -16,15 +16,15 @@ Part 2:
 
 **Day 3**
 
-Part 1: :
+Part 1: 🌟
 
 ---
 
 **Day 4**
 
-Part 1: :star::star:
+Part 1: 🌟
 
-Part 2: :star::star:
+Part 2: 🌟
 
 ---
 
@@ -35,24 +35,24 @@ Part 2: :star::star:
 
 **Day 6**
 
-Part 1: Complete
+Part 1: 🌟
 
-Part 2: Complete
+Part 2: 🌟
 
 ---
 
 **Day 7**
 
-Part 1: Complete
+Part 1: 🌟
 
-Part 2: Complete
+Part 2: 🌟
 
 ---
 
 
 **Day 8**
 
-Part 1: Complete
+Part 1: 🌟
 
 ---
 
@@ -60,5 +60,8 @@ Part 1: Complete
 
 ---
 
+**Day 10**
+
+---
 
 
